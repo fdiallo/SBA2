@@ -15,9 +15,9 @@
         <nav class="header-nav">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +31,50 @@
             </section>
         </section>
     </main>
-    
+
+    <section id="about">
+        <h2>About Us</h2>
+        <hr>
+        <p>Creative Accessible Design works with a trusted network of
+            consulting partners and can also collaborate directly with
+            owner- or developer-selected consultants, providing architectural
+            leadership and coordination to streamline communication, support
+            permitting, and keep projects moving forward. Accessibility is
+            integrated from the start to reduce compliance risk and
+            support consistent delivery.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <hr>
+        <ul>
+            <li>Consultation</li>
+            <li>Accessibility Site Surveys</li>
+            <li>Prototype Development</li>
+            <li>Building Design</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <hr>
+        <form id="form" action="" aria-label="form">
+            <small id="emailHelp">We'll not share your personal information with anyone</small><br><br>
+            <label for="name">Full Name</label><br>
+            <input type="text" placeholder="John Davis" aria-required="required" /><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="JohnDavis@gmail.com" aria-required="required"
+                aria-describedby="emailHelp" /><br><br>
+            <label for="subject">Subject </label><br>
+            <input type="text" placeholder="Subject" aria-required="required" /><br><br>
+            <label for="message">Message</label><br>
+            <textarea name="" id=""></textarea><br><br>
+            <button aria-label="button">Send</button>
+        </form>
+    </section>
+    <br>
+
+
 </body>
 
 <footer class="footer-container">
