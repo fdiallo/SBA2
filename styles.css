@@ -1,49 +1,79 @@
 .header-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 .header-nav {
-     padding: 30px;
      flex: 1;
 }
-
 .header-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
   color: white;
+  justify-content:space-around;
 }
-
 .header-container img {
-    max-width: 100px;
-    height: auto;
+    max-width: 80px;
+    max-height: 80px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
-
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
-
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+button {
+    border-radius: 5px;
+    border-color: white;
+}
+.left, .right  {
+    float: left;
+    width: 20%; 
+}
+.main {
+    float: left;
+    width: 60%; 
+}
+.footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(114, 114, 114);
+  color: white;
+  text-align: center;
+}
+.footer-nav {
+     flex: 1;
+}
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content:space-around;
+}
+@media screen and (max-width: 800px ){
+    .left, .main, .right {
+        width: 100%;
+    }
+}
 @media (max-width: 600px) {
     .header-nav ul {
         flex-direction: column;
-    }
-}
-
-
-.left, .right  {
-    float: left;
-    width: 20%; /* The width is 20% by default */
-}
-
-.main {
-    float: left;
-    width: 60%; /* The width is 60% by default */
-}
-
-/* Use a Media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px ){
-    .left, .main, .right {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
